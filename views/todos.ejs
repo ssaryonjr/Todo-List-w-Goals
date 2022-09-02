@@ -14,6 +14,7 @@
             <li class='todoItem' data-id='<%=el._id%>'>
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
                 <span class='del'> Delete </span>
+                <span><%= el.completion %> </span>
             </li>
     <% }) %>    
     </ul>
@@ -22,6 +23,10 @@
 
     <form action="/todos/createTodo" method='POST'>
         <input type="text" placeholder="Enter Todo Item" name='todoItem'>
+
+        <label for="start">Start date:</label>
+
+        <input type="date" id="start" name="userDate">
         <input type="submit">
     </form>
 
