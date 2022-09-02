@@ -15,6 +15,7 @@
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
                 <span class='del'> Delete </span>
                 <span><%= el.completion %> </span>
+                <span><%= el.notes %> </span>
             </li>
     <% }) %>    
     </ul>
@@ -27,6 +28,7 @@
         <label for="start">Start date:</label>
 
         <input type="date" id="start" name="userDate">
+        <input type="text" name ="notes">
         <input type="submit">
     </form>
 

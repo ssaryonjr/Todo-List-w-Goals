@@ -18,7 +18,8 @@ module.exports = {
                 completed: false, 
                 userId: req.user.id,
                 date: new Date(),
-                completion: req.body.userDate
+                completion: req.body.userDate,
+                notes: req.body.notes
             })
             console.log('Todo has been added!')
             res.redirect('/todos')
