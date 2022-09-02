@@ -20,6 +20,10 @@ const TodoSchema = new mongoose.Schema({
   completion: {
     type: Date,
     required: true,
+  },
+  notes: {
+    type: String,
+    required: false,
   }
 })
 
