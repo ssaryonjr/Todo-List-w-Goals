@@ -5,25 +5,31 @@ const TodoSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+
   completed: {
     type: Boolean,
     required: true,
   },
+
   userId: {
     type: String,
-    required: true
-  }, 
+    required: true,
+  },
+
   date: {
     type: Date,
     required: true
-  }, 
+  },
+
   completion: {
     type: Date,
     required: true,
-    date: new Date()
-  }, 
-
-
+  },
+  
+  notes: {
+    type: String,
+    required: false,
+  },
 })
 
 module.exports = mongoose.model('Todo', TodoSchema)

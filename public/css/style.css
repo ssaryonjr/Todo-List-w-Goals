@@ -1,9 +1,11 @@
-h1{
+/* h1{
     color: red;
-}
+} */
 .completed{
     text-decoration: line-through;
-    color: gray;
+    color: #fff;
+    background-color: green;
+    font-size: 1.5rem;
 }
 .not{
     text-decoration: underline;
@@ -11,3 +13,29 @@ h1{
 .blue{
     color: blue;
 }
+text-muted{
+    color: red;
+}
+
+div.container-fluid{
+    justify-content: space-evenly !important
+}
+a.btn.btn-primary{
+    padding: 0.7rem 4rem;
+    background-color: rgb(220, 177, 93);
+    border: 1px white solid;
+    text-decoration: none;
+    color: #fff;
+
+
+}
+input#addBtn{
+    background-color: rgb(220, 177, 93);
+    border: 1px white solid;
+
+}
+.row{
+    text-align: center;
+    margin-top: 16rem;
+}
+
