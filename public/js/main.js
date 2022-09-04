@@ -1,7 +1,7 @@
 const deleteBtn = document.querySelectorAll('.del')
-const todoItem = document.querySelectorAll('span.not')
+const todoItem = document.querySelectorAll('div.not')
 const completeDate = document.querySelector('.dateComplete')
-const todoComplete = document.querySelectorAll('span.completed')
+const todoComplete = document.querySelectorAll('div.completed')
 
 Array.from(deleteBtn).forEach((el)=>{
     el.addEventListener('click', deleteTodo)
@@ -16,7 +16,7 @@ Array.from(todoComplete).forEach((el)=>{
 })
 
 async function deleteTodo(){
-    const todoId = this.parentNode.dataset.id
+    const todoId = this.parentNode.parentNode.dataset.id
     try{
         const response = await fetch('todos/deleteTodo', {
             method: 'delete',

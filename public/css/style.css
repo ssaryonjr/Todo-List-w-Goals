@@ -1,24 +1,30 @@
-/* h1{
-    color: red;
-} */
+
+
+
 .completed{
-    text-decoration: line-through;
-    color: #fff;
+   
+    color: #000;
     background-color: green;
-    font-size: 1.5rem;
 }
-.not{
+/* .not{
     text-decoration: underline;
-}
+} */
 .blue{
     color: blue;
 }
 text-muted{
     color: red;
 }
+h1, h2{
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+
 
 div.container-fluid{
-    justify-content: space-evenly !important
+    justify-content:space-between;
 }
 a.btn.btn-primary{
     padding: 0.7rem 4rem;
@@ -27,15 +33,48 @@ a.btn.btn-primary{
     text-decoration: none;
     color: #fff;
 
+    align-self: center;
 
+}
+.del{
+    margin-top: auto;
 }
 input#addBtn{
     background-color: rgb(220, 177, 93);
     border: 1px white solid;
+    width: 20%;
+    align-self: center;
 
 }
-.row{
+.card-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: auto;
+    position: relative;
+    gap: 30px;
     text-align: center;
-    margin-top: 16rem;
+  
 }
 
+div.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form{
+    text-align: center;
+}
+div.title-date{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+textarea{
+    resize: both;
+    width: 45%;
+    height: 6rem;
+    border-radius: 10px;
+    width: min(90%, 600px);
+}

@@ -27,16 +27,23 @@
 <div class="card">
     <form action="/todos/createTodo" method='POST'>
 <div class="card-body">
-    <h5 class="card-title"> Add a Note  </h5>
+    <h3 class="card-title"> Add a Note  </h3>
     <div class="form-group">
-        <label for="text">Title: </label>
-        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
-        <label for="start">Start date:</label>
-        <input type="date" id="start" name="userDate">
-        <label for="text">Description</label>
-        <input type="text" name ="notes">
+        <div class="title-date">
+        <label for="text">Title: 
+            <input type="text" placeholder="Enter Todo Item" name='todoItem'>
+        </label> 
+        <label for="start">Start date:
+            <input type="date" id="start" name="userDate">
+        </label>
+          </div>
+<div class="description">
+     <label for="text">Description:  </label>
+
+</div>
+        <textarea type="text" name ="notes"> </textarea>
     </div>
-   <br>
+   
     <input type="submit"  value="Add Note" class="btn btn-primary" 
         id="addBtn"
         >
@@ -45,9 +52,28 @@
 </form>
 </div>
 
-   
- <h1>Todos</h1>
-    <ul>
+<h2><%= user.userName %> has <%= left %> things left to do.</h2>
+
+<div class="card-container">
+<% todos.forEach( el => { %>
+<div data-id='<%=el._id%>' class='card' >
+    
+    <!-- <div class="card-body"> -->
+        <div class='card-body <%= el.completed === true ? 'completed' : 'not'%>'>
+
+    <!-- <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %> </span> -->
+      <h5 class="card-title"> <%= el.todo %> </h5>
+      <span><%= el.completion.toDateString() %> </span>
+      <p class="card-text"> <%= el.notes %> </p>
+      <a href="#" class="btn btn-primary del">Delete</a>
+
+    </div>
+  </div>
+  <% }) %>  
+</div>
+
+ <!-- <h1>Todos</h1>
+ <ul>
     <% todos.forEach( el => { %>
         
             <li class='todoItem' data-id='<%=el._id%>'>
@@ -57,9 +83,9 @@
                 <span><%= el.notes %> </span>
             </li>
     <% }) %>    
-    </ul> 
+    </ul>  -->
 
-    <h2><%= user.userName %> has <%= left %> things left to do.</h2>
+  
 
     <!-- <form action="/todos/createTodo" method='POST'>
         <input type="text" placeholder="Enter Todo Item" name='todoItem'>
