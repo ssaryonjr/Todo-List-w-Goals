@@ -63,10 +63,18 @@ div.title-date {
 	gap: 10%;
 }
 
-textarea {
-	resize: both;
-	width: 45%;
-	height: 6rem;
-	border-radius: 10px;
-	width: min(90%, 600px);
+textarea{
+    resize: both;
+    width: 45%;
+    height: 6rem;
+    border-radius: 10px;
+    width: min(90%, 600px);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-inline: auto;
 }
