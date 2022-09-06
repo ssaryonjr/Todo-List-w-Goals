@@ -1,74 +1,66 @@
-
-
-
-.completed{
-   
-    color: #000;
-    background-color: green;
+.completed {
+	color: #000;
+	background-color: green;
 }
 /* .not{
     text-decoration: underline;
 } */
-.blue{
-    color: blue;
+.blue {
+	color: blue;
 }
-text-muted{
-    color: red;
+text-muted {
+	color: red;
 }
-h1, h2{
-    text-align: center;
-    font-size: 3rem;
-    padding: 20px;
-}
-
-
-
-div.container-fluid{
-    justify-content:space-between;
-}
-a.btn.btn-primary{
-    padding: 0.7rem 4rem;
-    background-color: rgb(220, 177, 93);
-    border: 1px white solid;
-    text-decoration: none;
-    color: #fff;
-
-    align-self: center;
-
-}
-.del{
-    margin-top: auto;
-}
-input#addBtn{
-    background-color: rgb(220, 177, 93);
-    border: 1px white solid;
-    width: 20%;
-    align-self: center;
-
-}
-.card-container{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-auto-rows: auto;
-    position: relative;
-    gap: 30px;
-    text-align: center;
-  
+h1,
+h2 {
+	text-align: center;
+	font-size: 3rem;
+	padding: 20px;
 }
 
-div.card-body{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+div.container-fluid {
+	justify-content: space-between;
 }
-form{
-    text-align: center;
+a.btn.btn-primary {
+	padding: 0.7rem 4rem;
+	background-color: rgb(220, 177, 93);
+	border: 1px white solid;
+	text-decoration: none;
+	color: #fff;
+
+	align-self: center;
 }
-div.title-date{
-    display: flex;
-    justify-content: center;
-    gap: 10%;
+.del {
+	margin-top: auto;
+}
+input#addBtn {
+	background-color: rgb(220, 177, 93);
+	border: 1px white solid;
+	width: 20%;
+	align-self: center;
+}
+.card-container {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-auto-rows: auto;
+	position: relative;
+	gap: 30px;
+	text-align: center;
+}
+
+div.card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+form {
+	text-align: center;
+}
+div.title-date {
+	display: flex;
+	justify-content: center;
+	gap: 10%;
 }
 
 textarea{
